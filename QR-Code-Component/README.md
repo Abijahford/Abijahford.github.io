@@ -25,6 +25,7 @@
 - Add any additional resources(images, styles)
 - Structure HTML
 - Style page with CSS(mobile first)
+- Style page for desktop
 
 ### Built with
 
@@ -36,6 +37,8 @@
 ### What I learned
 
 ### Continued development
+
+Cross Browser Development
 
 ### Useful resources
 
