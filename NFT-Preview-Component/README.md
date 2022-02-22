@@ -12,8 +12,8 @@
 
 ### Screenshot
 
-![Mobile View]()
-![Desktop View]()
+![Mobile View](images/nft-component-mobile.PNG)
+![Desktop View](images/nft-component-desktop.PNG)
 
 ## My process
 
