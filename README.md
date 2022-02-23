@@ -1,4 +1,4 @@
-# Front-End-Mentor-Challenges
+# Front-End
 
-Fun little projects to keep my brain busy!
+A place to display fun little projects to keep my brain busy!
 [Front End Mentor](https://www.frontendmentor.io/challenges)
