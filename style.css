@@ -46,7 +46,7 @@ grammarly-desktop-integration {
   vertical-align: center;
   border: 20px solid;
   height: auto;
-  border-image: url('/images/user-frame.png') 32;
+  border-image: url('images/user-frame.png') 32;
   margin-left: 23px;
 }
 .start-menu .right-column .links {
