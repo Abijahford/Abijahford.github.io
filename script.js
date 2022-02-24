@@ -1,3 +1,7 @@
+// Get the viewport height
+let vh = window.innerHeight * 0.01;
+// Set the value in to the custom property
+document.documentElement.style.setProperty('--vh', `${vh}px`);
 // Open Start Menu when Start button is clicked
 document.querySelector('.start-button').onclick = function () {
   this.classList.toggle('clicked-start-button');
