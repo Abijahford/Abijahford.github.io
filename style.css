@@ -177,6 +177,7 @@ hr {
 }
 .opened-app img {
   height: 24px;
+  user-select: none;
 }
 .opened-app p {
   user-select: none;

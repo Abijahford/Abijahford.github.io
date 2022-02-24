@@ -16,6 +16,14 @@ document.querySelector('.main').onclick = function () {
     startMenu.classList.add('hidden');
   }
 };
+// Hide Start Menu if Open Apps are clicked
+document.querySelector('.open-apps').onclick = function () {
+  if (!startMenu.classList.contains('hidden')) {
+    startButton.classList.toggle('clicked-start-button');
+    startMenu.classList.add('hidden');
+  }
+};
+// Hide Start Menu on
 const musicTab = document.querySelector('.music');
 const mediaPlayerNavElement = document.querySelector('.media-player');
 // When the link is clicked, remove the hidden class
