@@ -23,6 +23,8 @@ grammarly-desktop-integration {
   background-color: #d7d8d5;
   border-top: white 2px solid;
   padding: 2px;
+  display: flex;
+  gap: 5px;
 }
 .start-menu {
   background-color: #d7d8d5;
@@ -154,6 +156,32 @@ hr {
   top: 0;
   right: 0;
   margin: 10px 20px;
+  display: none;
+}
+.open-apps {
+  display: flex;
+  margin-left: 20px;
+}
+.opened-app {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 24px;
+  width: 130px;
+  padding-left: 3px;
+  cursor: pointer;
+  border-right: black 2px solid;
+  border-bottom: black 2px solid;
+  border-top: white 2px solid;
+  border-left: white 2px solid;
+}
+.opened-app img {
+  height: 24px;
+}
+.opened-app p {
+  user-select: none;
+}
+.media-player {
   display: none;
 }
 @media only screen and (max-width: 390px) {

@@ -17,11 +17,14 @@ document.querySelector('.main').onclick = function () {
   }
 };
 const musicTab = document.querySelector('.music');
+const mediaPlayerNavElement = document.querySelector('.media-player');
 // When the link is clicked, remove the hidden class
 function removeHidden(element) {
-  element.style.display = 'block';
+  element.style.display = 'inline-block';
+  mediaPlayerNavElement.style.display = 'flex';
 }
 // When the button is clicked, add the hidden class
 function addHidden(element) {
   element.style.display = 'none';
+  mediaPlayerNavElement.style.display = 'none';
 }
