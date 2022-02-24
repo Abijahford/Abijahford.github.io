@@ -151,9 +151,9 @@ hr {
 .window.music {
   width: 300px;
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
-  margin: 40px 30px;
+  margin: 10px 20px;
   display: none;
 }
 @media only screen and (max-width: 390px) {
