@@ -38,6 +38,7 @@ grammarly-desktop-integration {
   grid-template-areas: 'left-column right-column';
   grid-template-columns: 60% 40%;
   font-size: 0.9rem;
+  z-index: 5;
 }
 .start-menu .left-column {
   border-right: #b2b3b1 2px solid;
