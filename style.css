@@ -105,6 +105,57 @@ hr {
 .hidden {
   display: none;
 }
+.window {
+  background: #d7d8d5;
+  border-top: white 1px solid;
+  border-left: white 1px solid;
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
+  box-shadow: 0 0 0 0.5px #d7d8d5;
+}
+.window-heading {
+  background: linear-gradient(135deg, #929291 60%, #d7d8d5);
+  height: 20px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.window-heading > button {
+  height: 17.5px;
+  cursor: pointer;
+  padding-left: 4px;
+  padding-right: 4px;
+  border-top: white 1px solid;
+  border-left: white 1px solid;
+  border-right: black 1px solid;
+  border-bottom: black 1px solid;
+}
+.window-heading-title {
+  display: flex;
+  align-items: center;
+}
+.window-heading .window-heading-title img {
+  height: 18px;
+  margin: 0;
+  padding: 2px;
+}
+.window-heading-title > p {
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: #d7d8d5;
+}
+.window-body {
+  margin: 5px;
+}
+.window.music {
+  width: 300px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 40px 30px;
+  display: none;
+}
 @media only screen and (max-width: 390px) {
   html,
   body {
