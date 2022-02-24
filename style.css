@@ -108,12 +108,15 @@ hr {
   display: none;
 }
 .window {
+  height: auto;
   background: #d7d8d5;
   border-top: white 1px solid;
   border-left: white 1px solid;
   border-right: black 1px solid;
   border-bottom: black 1px solid;
   box-shadow: 0 0 0 0.5px #d7d8d5;
+  display: flex;
+  flex-direction: column;
 }
 .window-heading {
   background: linear-gradient(135deg, #929291 60%, #d7d8d5);
@@ -122,6 +125,15 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.window-options {
+  height: 17.5px;
+  padding-left: 6px;
+}
+.window-options a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #929291;
 }
 .window-heading > button {
   height: 17.5px;
@@ -137,18 +149,24 @@ hr {
   display: flex;
   align-items: center;
 }
-.window-heading .window-heading-title img {
+.window-heading-title img {
   height: 18px;
   margin: 0;
   padding: 2px;
+  user-select: none;
 }
 .window-heading-title > p {
   font-size: 0.85rem;
   font-weight: bold;
   color: #d7d8d5;
+  user-select: none;
 }
 .window-body {
   margin: 5px;
+  border-right: white 2px solid;
+  border-bottom: white 2px solid;
+  border-top: black 2px solid;
+  border-left: black 2px solid;
 }
 .window.music {
   width: 300px;
@@ -156,6 +174,17 @@ hr {
   top: 0;
   right: 0;
   margin: 10px 20px;
+  display: none;
+}
+.window.resume {
+  width: 300px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px 20px;
+  resize: both;
+  overflow: auto;
+  z-index: 2;
   display: none;
 }
 .open-apps {
@@ -191,6 +220,7 @@ hr {
   flex-direction: column;
   margin-left: 5px;
   margin-top: 5px;
+  z-index: auto;
 }
 .shortcut {
   height: 60px;

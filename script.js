@@ -25,6 +25,7 @@ document.querySelector('.open-apps').onclick = function () {
 };
 // Hide Start Menu on
 const musicTab = document.querySelector('.music');
+const resumeTab = document.querySelector('.resume');
 const mediaPlayerNavElement = document.querySelector('.media-player');
 // When the link is clicked, remove the hidden class
 function removeHidden(element) {
