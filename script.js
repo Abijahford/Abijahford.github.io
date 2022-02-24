@@ -16,3 +16,12 @@ document.querySelector('.main').onclick = function () {
     startMenu.classList.add('hidden');
   }
 };
+// When the link is clicked, remove the hidden class
+const musicTab = document.querySelector('.music');
+function removeHidden() {
+  musicTab.style.display = 'block';
+}
+// When the button is clicked, add the hidden class
+function addHidden() {
+  musicTab.style.display = 'none';
+}
