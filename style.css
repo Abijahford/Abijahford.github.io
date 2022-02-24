@@ -185,6 +185,27 @@ hr {
 .media-player {
   display: none;
 }
+.shortcut-container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.shortcut {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.shortcut p {
+  text-shadow: 2px 2px 2px black;
+  margin-top: 0;
+  text-align: center;
+  color: #d7d8d5;
+}
+
 @media only screen and (max-width: 390px) {
   html,
   body {
