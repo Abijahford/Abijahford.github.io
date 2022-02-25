@@ -12,6 +12,15 @@ body {
     'main'
     'footer';
 }
+textarea,
+input.text,
+input[type='text'],
+input[type='button'],
+input[type='submit'],
+.input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
 grammarly-desktop-integration {
   display: none;
 }
@@ -255,7 +264,7 @@ hr {
 .date-time {
   position: absolute;
   right: 0;
-  padding-right: 3px;
+  padding-right: 5px;
 }
 #currentDateTime {
   text-align: center;
@@ -266,7 +275,7 @@ hr {
   background-color: #d7d8d5;
   font-size: 0.8rem;
   height: 20px;
-  width: 110px;
+  width: 120px;
   cursor: pointer;
 }
 @media only screen and (max-width: 390px) {
