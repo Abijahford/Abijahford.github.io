@@ -204,7 +204,7 @@ hr {
   align-items: center;
   gap: 5px;
   height: 24px;
-  width: 130px;
+  width: auto;
   padding-left: 3px;
   cursor: pointer;
   border-right: black 2px solid;
@@ -218,6 +218,7 @@ hr {
 }
 .opened-app p {
   user-select: none;
+  padding-right: 5px;
 }
 .media-player {
   display: none;
@@ -253,5 +254,11 @@ hr {
   html,
   body {
     height: calc(var(--vh, 1vh) * 100);
+  }
+  .opened-app > p {
+    display: none;
+  }
+  .opened-app > img {
+    padding-right: 4px;
   }
 }
