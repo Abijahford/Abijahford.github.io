@@ -23,7 +23,7 @@ document.querySelector('.open-apps').onclick = function () {
     startMenu.classList.add('hidden');
   }
 };
-// Hide Start Menu on
+// When shortcuts or links are clicked open window and nav element
 const musicTab = document.querySelector('.music');
 const resumeTab = document.querySelector('.resume');
 const mediaPlayerNavElement = document.querySelector('.media-player');
