@@ -264,9 +264,9 @@ hr {
   border-bottom: none;
   border-right: none;
   background-color: #d7d8d5;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   height: 20px;
-  width: 95px;
+  width: 110px;
   cursor: pointer;
 }
 @media only screen and (max-width: 390px) {
