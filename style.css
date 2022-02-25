@@ -178,7 +178,6 @@ hr {
   display: none;
 }
 .window.resume {
-  width: 300px;
   position: absolute;
   top: 0;
   left: 0;
@@ -187,6 +186,14 @@ hr {
   overflow: auto;
   z-index: 2;
   display: none;
+}
+.window.resume > .window-body {
+  width: 97%;
+  height: auto;
+}
+.window-body > img {
+  max-width: 100%;
+  height: 100%;
 }
 .open-apps {
   display: flex;
@@ -215,6 +222,9 @@ hr {
 .media-player {
   display: none;
 }
+.resume-player {
+  display: none;
+}
 .shortcut-container {
   position: absolute;
   display: flex;
@@ -233,6 +243,8 @@ hr {
 .shortcut p {
   text-shadow: 2px 2px 2px black;
   margin-top: 0;
+  margin-bottom: 0;
+  font-size: 0.9rem;
   text-align: center;
   color: #d7d8d5;
 }

@@ -27,13 +27,14 @@ document.querySelector('.open-apps').onclick = function () {
 const musicTab = document.querySelector('.music');
 const resumeTab = document.querySelector('.resume');
 const mediaPlayerNavElement = document.querySelector('.media-player');
+const resumePlayerNavElement = document.querySelector('.resume-player');
 // When the link is clicked, remove the hidden class
-function removeHidden(element) {
+function removeHidden(element, element2) {
   element.style.display = 'inline-block';
-  mediaPlayerNavElement.style.display = 'flex';
+  element2.style.display = 'flex';
 }
 // When the button is clicked, add the hidden class
-function addHidden(element) {
+function addHidden(element, element2) {
   element.style.display = 'none';
-  mediaPlayerNavElement.style.display = 'none';
+  element2.style.display = 'none';
 }
