@@ -38,3 +38,11 @@ function addHidden(element, element2) {
   element.style.display = 'none';
   element2.style.display = 'none';
 }
+// Displaying Date and Time
+var today = new Date();
+var date =
+  today.getMonth() + 1 + '/' + today.getDate() + '/' + today.getFullYear();
+var time =
+  today.getHours() + ':' + today.getMinutes() + ':' + today.getSeconds();
+var dateTime = date + ' ' + time;
+document.getElementById('currentDateTime').value = dateTime;
