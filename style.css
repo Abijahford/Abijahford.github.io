@@ -181,9 +181,9 @@ hr {
 .window.music {
   width: 300px;
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
-  margin: 10px 20px;
+  margin: 40px 20px;
   display: none;
 }
 .window.resume {
