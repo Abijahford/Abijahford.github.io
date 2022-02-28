@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Abijah's Calorie Calculator">
+  <meta name="author" content="Abijah Ford">
+
+  <title>Abijah Ford's - Calorie Calculator</title>
+
+  <link rel = "icon" href = "./images/afFavicon.PNG" type = "image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Font awesome for icons -->
+  <script src="https://kit.fontawesome.com/8c75fe1e0f.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<body id="page-top" class="font">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top navvy" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="images/afLogo.PNG" alt="Abijahs Logo" ></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a style="color: rgb(84, 250, 252);" class="nav-link js-scroll-trigger" href="https://abijahford.info">Back to Abijahford.info</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="container-fluid bg-light text-dark mx-auto">
+      <div class="row">
+        <div class="col-6">
+          <div class="jumbotron border" style="background-color: white;">
+            <h3 style="text-align: center;" >Welcome to the Calorie Calculator!</h3>
+            <p>A calorie is a unit of energy. It is a unit of heat used to indicate the amount of energy that foods will produce in the human body.
+              <br><br>
+              Whether you lift weights/work out or not it is important to know how many calories to ingest a day, this way you are able to sustain the right amount of energy throughout the day.
+              <br><br>
+              If you feel happy about your current weight while having enough energy throughout the day, you are properly exercising weight-maintenance. In a clinical setting, weight maintenance might refer to maintenance of current weight, weight after weight loss, or some other selected target weight.
+            </p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="jumbotron border" style="background-color: white;">
+            <form name="form" onsubmit="calculate(this)" class="form-group">
+              <select name="option" id="options" class="form-control">
+                <option value="0">Options:</option>
+                <option value="1">Lose Mass</option>
+                <option value="2">Maintain Mass</option>
+                <option value="3">Gain Mass</option>
+              </select>
+              <br><br>
+              <label for="weight" class="mr-1"><b>Weight</b>(lbs)<b>:</b></label>
+              <input type="number" id="weight" name="weight" class="weight mb-2 form-control">
+              <p class="text-secondary">Click the button below to calculate the reccommended amount per day.</p>
+              <p class="lead">
+                <button type="submit" value="submit" class="btn btn-lg footah navvy" style="color: rgb(84, 250, 252); " role="button">Submit</button>
+              </p>
+            <hr class="my-4">
+          </form>
+          </div>
+        </div>
+      </div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark navvy">
+    <div class="container">
+      <h5 class="footah m-0 text-center">Abijah Ford - Proudly located in Roseville, Minnesota. </h5>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/functions.js"></script>
+
+  <script>
+    function calculate(e) {
+      var option = document.getElementById("options");
+      var optionText = document.getElementById('options').selectedOptions[0].text
+      var lbs = document.getElementById("weight").value;
+      var total = 0;
+      // alert(option.value);
+      if (option.value == 0) {
+        alert("You must select an option.");
+      } else if (option.value == 1 ) {
+        var pretext = '<hr class="my-4">' + 'You have chosen to ' + optionText + '. Below is the amount of calories you should ingest each day.';
+        var text = "IMO a calorie deficit is not neccessary to lose weight, an easy fix is to eat healthier and excercise." + '<br>' +'<a href="https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy">' + 'Harvard Study' + '</a>';
+        event.preventDefault()
+        total = lbs * 15;
+        output = pretext + '<b>' + '<h4>' + total + 'cals</b>' + '</h4>' + text;
+        $(".lead").after(output);
+      } else if (option.value == 2) {
+        var pretext = '<hr class="my-4">' + 'You have chosen to ' + optionText + '. Below is the amount of calories you should ingest each day.';
+        var text = '<br>' +'<a href="https://www.health.harvard.edu/staying-healthy/calorie-counting-made-easy">' + 'Harvard Study' + '</a>';
+        event.preventDefault()
+        total =  lbs * 15;
+        output = pretext + '<b>' + '<h4>' + total + 'cals</b>' + '</h4>' + text;
+        $(".lead").after(output);
+      } else {
+        var pretext = '<hr class="my-4">' + 'You have chosen to ' + optionText + '. Below is the amount of calories you should ingest each day.';
+        var text = "This is reccomended to those that spend 1-2 hours weight lifting and or burning and excessive amount of calories in a day." + '<br>' +'<a href="https://www.livestrong.com/article/159193-calorie-intake-to-gain-muscle/">' + 'Live Strong Study' + '</a>';
+        event.preventDefault()
+        total = lbs * 19;
+        output = pretext + '<b>' + '<h4>' + total + 'cals</b>' + '</h4>' + text;
+        $(".lead").after(output);
+      }
+    }
+
+
+  </script>
+
+
+</body>
+
+</html>

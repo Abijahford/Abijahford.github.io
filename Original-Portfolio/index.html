@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Abijah's Personal Webpage.">
+  <meta name="author" content="Abijah Ford">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+  <title>Abijah Ford's - Web Portfolio.</title>
+
+  <link rel = "icon" href = "./images/afFavicon.PNG" type = "image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Font awesome for icons -->
+  <script src="https://kit.fontawesome.com/8c75fe1e0f.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+  <script>
+  // Load google charts
+  google.charts.load('current', {'packages':['corechart']});
+  google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+    ['Task', 'Level of interest'],
+    ['Computer Science', 2],
+    ['Internet Programming', 4],
+    ['Learning', 2],
+    ['Cryptocurrency', 2],
+    ['Gym', 2]
+  ]);
+
+  // Optional; add a title and set the width and height of the chart
+    var options = {'title':'My Interests', 'width':400, 'height':250,'slices': {
+            0: { color: 'rgb(84, 250, 252)' },
+            1: { color: '#343A40' },
+            2: { color: 'rgb(84, 250, 252)' },
+            3: { color: '#68f9ad' },
+            4: { color: '#343A40' }
+          },
+          'backgroundColor': '#f8f9fa',
+          'legend': {position: 'bottom'},
+          'is3D': 'true',
+ };
+
+  // Display the chart inside the <div> element with id="piechart"
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options); 
+  } 
+  </script>
+
+</head>
+
+<body id="page-top" class="font">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top navvy" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <img src="images/afLogo.PNG" alt="Abijahs Logo" ></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a style="color: rgb(84, 250, 252);" class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(84, 250, 252);" class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(84, 250, 252);" class="nav-link js-scroll-trigger" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(84, 250, 252);" class="nav-link" href="http://abijahford.info/blog/">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a style="color: rgb(84, 250, 252);" class="nav-link" href="photosofme.html">Photos</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light text-dark mt-4 mx-auto">
+      <div class="container"  style="padding: 60px;">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="d-flex justify-content-around container col-12">
+              <a href="https://www.linkedin.com/in/abijah-ford-68016a144/" style="font-size: 48px;" class="fab fa-linkedin" title="LinkedIn" ></a>
+              <a href="https://www.github.com/Abijahford" style="font-size: 48px;" class="fab fa-github" title="GitHub"></a>
+              <a href="images/Abijah Ford's Tech Resume.pdf" style="font-size: 48px;" class="fas fa-file" title="Resume"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="d-flex justify-content-center pb-3">All of the icons above and below are clickable.</p>
+  </header>
+  <br id="about">
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+          <h2 style="color: #484e53; text-align: center;">About me:</h2>
+          <hr style="background-color: rgb(84, 250, 252); height: 2px;">
+          <p class="lead">I was born and raised in Roseville, Minnesota. I feel so close to both nature and the city, which is where my love for both came from.
+          The only thing holding me back from leaving this tundra is my family, I value and cherish every moment with them. 
+          When I am not programming or working, the following are some things I enjoy:</p>
+          <ul>
+            <li class="list">Hiking, and photography - I often bring my camera with to capture the wonders of mother nature.</li>
+            <li class="list">Weightlifting - I enjoy a good challenge mentally and physically.</li>
+            <li class="list">Learning - I love to learn new things in many forms, whether in literature, documentary or in programming.</li>
+            <li class="list">Games - Everyone deserves a bit of leisure, grab a friend to play board games with.</li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light container-fluid">
+      <div class="row">
+        <div class="col-lg-8 mx-auto">
+             <br  id="projects"> 
+             <br>
+             <h2 style="color: #484e53; text-align: center;">Passion Projects:</h2>
+             <hr style="background-color: rgb(84, 250, 252); height: 2px;">
+
+          <!-- Testing -->
+          <div class="project-container">
+            <div class="project-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">Right Track - Ruby, Rails</h4>
+                  <p class="card-text">During my apprenticeship at Software for Good, I made updates to the existing codebase based on the client's feedback. It was my first time using Ruby on Rails to build a Web Application, but it certainly won't be my last.</p>
+                  <a href="https://righttrack-app.stpaul.gov/" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);">Visit Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="card">
+                <img class="card-img-top" src="images/snippetLWC.PNG"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">Living Word Church & WOM (Feb. 2021)</h4>
+                  <p class="card-text">I took on this gig as a chance to expand my knowledge in the web space, WordPress is an awesome CMS.</p>
+                  <a href="https://lwcwom.com" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);"  target="_blank">Visit Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="card">
+                <img class="card-img-top" src="images/snippetDK.PNG"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">Drumkit - JavaScript</h4>
+                  <p class="card-text">This project was very enjoyable, working on something you enjoy while learning could'nt get any better. Possibilities with JS are endless!</p>
+                  <a href="jsPractice/index.html" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);">Visit Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="card">
+                <img class="card-img-top" src="images/snippetJSCL.PNG"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">Clock - JavaScript and CSS</h4>
+                  <p class="card-text">A simple clock, who knew such a small scale project could possess a large scale of knowledge.</p>
+                  <a href="jsClock/index.html" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);">Visit Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">Blog - HTML, CSS(Bootstrap), JS</h4>
+                  <p class="card-text">A blog page where I will be documenting my journey about my personal life, programming, travel and much more.</p>
+                  <a href="blog/index.html" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);">Visit Site</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="card">
+                <img class="card-img-top" src="images/githubfinder.PNG"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">Github Finder - REACTJS, HTML, CSS deployed with Netlify</h4>
+                  <p class="card-text">My first ReactJS app, this application will be used to search for users and show information like; repositories, followers, following, etc. I learned a lot about Components, Props, and State while creating this application.</p>
+                  <a href="https://githubfinderace.netlify.app/" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);">Visit Application</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="card">
+                <img class="card-img-top" src="images/calorieCalc.PNG"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">Calorie Calculator - HTML, CSS(Bootstrap), JS</h4>
+                  <p class="card-text">Whether you lift weights/work out or not it is important to know how many calories to ingest a day, this way you are able to sustain the right amount of energy throughout the day.</p>
+                  <a href="calorieCalculator/index.html" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);">Visit Application</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="card">
+                <img class="card-img-top" src="images/2bestfriends.PNG"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">2BestFriendsAndABucket - HTML, CSS(Bootstrap), JS</h4>
+                  <p class="card-text">A website I built for a local startup house cleaning company. </p>
+                  <a href="https://2bestfriendsandabucket.com" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);" target="_blank">Visit Page</a>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="card">
+                <img class="card-img-top" src="images/redelfshop.PNG"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold">The Red Elf Shop - HTML, CSS, JS, Shopify</h4>
+                  <p class="card-text">A website I built for a local small business that makes and sells unique cloths and accessories for your Christmas Elf.  </p>
+                  <a href="https://theredelfshop.com" class="btn btn-md btn-rounded navvy footah" style="color: rgb(84, 250, 252);" target="_blank">Visit Page</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <div class="row" style="align-items: center;">
+        <a class="col-12 js-scroll-trigger" style="color: #484e53; text-align: center;" href="#page-top"><span class="fa fa-arrow-up"></span>Click here to go to top<span class="fa fa-arrow-up"></span></a>
+      </div>
+      <div class="container"  style="padding: 60px;">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 style="color: #484e53; text-align: center;">Contact me</h2>
+            <hr style="background-color: rgb(84, 250, 252); height: 2px;">
+            <p class="lead" style="text-align: center;">If you would like to get ahold of me, hit me up via email/text/call by clicking the buttons below.</p>
+            <div class="d-flex justify-content-around container col-12">
+              <a href="mailto: ford.abijah@gmail.com" style="font-size: 48px; color: #484e53;" class="fa fa-envelope" title="Email"></a>
+              <a href="sms:651-468-9313" style="font-size: 48px; color: #484e53;" class="fas fa-sms" title="Text"></a>
+              <a href="tel:651-468-9313" style="font-size: 48px; color: #484e53;" class="fas fa-phone-volume" title="Call"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark navvy">
+    <div class="container">
+      <h5 style="color: rgb(84, 250, 252);" class="footah m-0 text-center">Abijah Ford - Proudly located in Roseville, Minnesota. </h5>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+  
+  <!-- Plugin JavaScript -->
+  <script src="js/jquery.easing.min.js"></script>
+
+  <!-- Custom JavaScript for this theme -->
+  <script src="js/functions.js"></script>
+
+</body>
+
+</html>

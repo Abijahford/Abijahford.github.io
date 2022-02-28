@@ -1,0 +1,142 @@
+html,
+body,
+main {
+  font-family: 'Century Gothic', CenturyGothic, Geneva, AppleGothic, sans-serif;
+  margin: 0;
+  height: 100%;
+}
+.bg {
+  background: url('https://images.unsplash.com/photo-1517139257142-7fc2fe86e650?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80');
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.header {
+  background: #1d232a;
+  padding: 20px;
+}
+.header h2 {
+  color: #3f698f;
+}
+.header h3 {
+  color: #91abc8;
+}
+.header p {
+  color: #384d62;
+  font-weight: bold;
+}
+.subscription {
+  background: #384d62;
+  padding: 20px;
+}
+.subscription h2 {
+  color: white;
+}
+.subscription h3 {
+  color: #1d232a;
+  display: flex;
+  align-items: center;
+}
+.subscription h3:nth-child(3) {
+  color: white;
+  font-size: 15px;
+}
+.subscription span {
+  font-size: 40px;
+  color: white;
+  padding-right: 10px;
+}
+.subscription button {
+  width: 100%;
+  padding: 5%;
+  font-size: 25px;
+  font-weight: bold;
+  background-color: #91abc8;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px black;
+  border: none;
+}
+.footer {
+  background: #3f698f;
+  padding: 20px;
+}
+.footer h2 {
+  color: white;
+}
+.footer h3 {
+  color: #91abc8;
+}
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .component-grid {
+    height: 80%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+      'header'
+      'subscription'
+      'footer';
+    margin: auto;
+    align-items: stretch;
+  }
+  .header {
+    border-radius: 10px 10px 0 0;
+    grid-area: header;
+    margin-top: 10%;
+    box-shadow: 5px 5px 5px white;
+  }
+  .subscription {
+    grid-area: subscription;
+    box-shadow: 5px 5px 5px white;
+  }
+  .footer {
+    grid-area: footer;
+    border-radius: 0 0 3% 3%;
+    box-shadow: 5px 5px 5px white;
+  }
+  br {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .component-grid {
+    height: 50%;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+      'header header'
+      'subscription footer';
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .header {
+    border-radius: 10px 10px 0 0;
+    grid-area: header;
+    margin-top: 20%;
+    box-shadow: 5px 5px 5px white;
+  }
+  .subscription {
+    grid-area: subscription;
+    border-radius: 0 0 0 10px;
+    box-shadow: 5px 5px 5px white;
+    height: 100%;
+  }
+  .subscription button {
+    margin-top: 30px;
+  }
+  .footer {
+    grid-area: footer;
+    border-radius: 0 0 10px 0;
+    box-shadow: 5px 5px 5px white;
+    height: 100%;
+  }
+}
