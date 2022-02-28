@@ -193,7 +193,7 @@ hr {
   margin: 10px 20px;
   resize: both;
   overflow: auto;
-  z-index: 2;
+  z-index: 3;
   display: none;
 }
 .window.projects {
@@ -203,7 +203,7 @@ hr {
   margin: 10px 20px;
   resize: both;
   overflow: auto;
-  z-index: 3;
+  z-index: 4;
   display: none;
   width: 350px;
 }
