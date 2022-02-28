@@ -9,9 +9,10 @@
 </head>
 <!-- Windows 7 Classic Theme -->
 <body>
+    <!-- Windows -->
     <div class="main">
-        <!-- Windows -->
-        <div class="window music">
+        <!-- Music -->
+        <div class="window music"> 
             <div class="window-heading">
                 <div class="window-heading-title">
                     <img src="images/Windows-Media-Center-icon.png" alt="Media Player">
@@ -23,6 +24,7 @@
                 <iframe src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
             </div>
         </div>
+        <!-- Resume -->
         <div class="window resume">
             <div class="window-heading">
                 <div class="window-heading-title">
@@ -39,11 +41,73 @@
                 <img src="images/resume-photo.PNG" alt="Photo of Resume">
             </div>
         </div>
+        <!-- Projects -->
+        <div class="window projects"> 
+            <div class="window-heading">
+                <div class="window-heading-title">
+                    <img src="images/Windows-Media-Center-icon.png" alt="Folder Image Icon">
+                    <p>Project Center</p>
+                </div>
+                <button class="closeButton" onclick="addHidden(projectTab, projectNavElement)">X </button>
+            </div>
+            <div class="window-body">
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
+                        <p>Project</p>
+                    </div>
+                    <a href="">View</a>
+                </div>
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
+                        <p>Project</p>
+                    </div>
+                    <a href="">View</a>
+                </div>
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
+                        <p>Project</p>
+                    </div>
+                    <a href="">View</a>
+                </div>
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
+                        <p>Project</p>
+                    </div>
+                    <a href="">View</a>
+                </div>
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
+                        <p>Project</p>
+                    </div>
+                    <a href="">View</a>
+                </div>
+                <div class="project">
+                    <div class="project-title">
+                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
+                        <p>Project</p>
+                    </div>
+                    <a href="">View</a>
+                </div>
+            </div>
+        </div>
         <!-- Shortcuts -->
         <div class="shortcut-container">
             <div class="shortcut" ondblclick="removeHidden(resumeTab, resumePlayerNavElement)">
-                <img src="images/Folder-Documents-icon.png" alt="Resume">
+                <img src="images/Folder-Documents-icon.png" alt="Resume Image">
                 <p>Resume</p>
+            </div>
+            <div class="shortcut" ondblclick="removeHidden(projectTab, projectNavElement)">
+                <img src="images/Windows-Media-Center-icon.png" alt="Project Image">
+                <p>Project Center</p>
+            </div>
+            <div class="shortcut" ondblclick="removeHidden(musicTab, mediaPlayerNavElement)">
+                <img src="images/Windows-Media-Player-icon.png" alt="Media Player Image">
+                <p>Media Player</p>
             </div>
         </div>
     </div>
@@ -52,7 +116,7 @@
             <div class="left-column">
                 <div class="links">
                     <div class="start-menu-links" onclick="removeHidden(resumeTab, resumePlayerNavElement)"><img src="images/Folder-Documents-icon.png" alt="Resume Icon"><a href="#">Resume</a></div>
-                    <div class="start-menu-links"><img src="images/Windows-Media-Center-icon.png" alt="Media Center Icon"><a href="#">Project Center</a></div>
+                    <div class="start-menu-links" onclick="removeHidden(projectTab, projectNavElement)"><img src="images/Windows-Media-Center-icon.png" alt="Media Center Icon"><a href="#">Project Center</a></div>
                     <div class="start-menu-links" onclick="removeHidden(musicTab, mediaPlayerNavElement)"><img src="images/Windows-Media-Player-icon.png" alt="Media Player Icon"><a href="#">Media Player</a></div>
                     <div class="start-menu-links"><img src="images/Whack-Windows-Live-Messenger-icon.png" alt="Live Messenger Icon"><a href="#"><span class="bold">*</span> = Unfunctional</a></div>
                     <div class="start-menu-links" onclick="window.location.reload()"><img src="images/Windows-Live-Mesh-icon.png" alt="Refresh Icon"><a href="#">Refresh</a></div>
@@ -64,8 +128,8 @@
                     <!-- Opens tab with file that Includes: About Me and Contact Info -->
                     <p style="font-weight: bold; margin: 0; user-select: none;">Abijah Ford</p>
                     <!-- Opens tab with Resume document, option to download -->
-                    <a href="#" id="music" onclick="removeHidden(resumeTab, resumePlayerNavElement)">Resume</a>
-                    <a href="#">Projects</a>
+                    <a href="#" id="resume" onclick="removeHidden(resumeTab, resumePlayerNavElement)">Resume</a>
+                    <a href="#" id="resume" onclick="removeHidden(projectTab, projectNavElement)">Projects</a>
                     <a href="#" id="music" onclick="removeHidden(musicTab, mediaPlayerNavElement)">Music</a>
                     <hr>
                     <a href="#"><span class="bold">*</span>Games</a>
@@ -89,6 +153,10 @@
             <div class="opened-app resume-player">
                 <img src="images/Folder-Documents-icon.png" alt="Resume Image">
                 <p>Resume</p>
+            </div>
+            <div class="opened-app project-player">
+                <img src="images/Windows-Media-Center-icon.png" alt="Project Image">
+                <p>Project Center</p>
             </div>
         </div>
         <div class="date-time">

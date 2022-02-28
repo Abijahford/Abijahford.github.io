@@ -196,6 +196,53 @@ hr {
   z-index: 2;
   display: none;
 }
+.window.projects {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px 20px;
+  resize: both;
+  overflow: auto;
+  z-index: 3;
+  display: none;
+  width: 350px;
+}
+.window.projects > .window-body {
+  display: flex;
+  flex-direction: column;
+}
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 3px;
+  margin-right: 3px;
+  border-bottom: #b2b3b1 1px solid;
+}
+.project > a {
+  font-size: 0.9rem;
+  text-decoration: none;
+  color: #929291;
+  font-weight: bold;
+  padding-right: 10px;
+}
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.project-title > p {
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: bold;
+  user-select: none;
+}
+.project-title > img {
+  height: 20px;
+  margin: 0;
+  padding: 2px;
+  user-select: none;
+}
 .window.resume > .window-body {
   width: 97%;
   height: auto;
@@ -235,13 +282,18 @@ hr {
 .resume-player {
   display: none;
 }
+.project-player {
+  display: none;
+}
 .shortcut-container {
   position: absolute;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-left: 5px;
   margin-top: 5px;
   z-index: auto;
+  height: 260px;
 }
 .shortcut {
   height: 60px;
