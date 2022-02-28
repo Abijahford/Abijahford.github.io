@@ -26,8 +26,10 @@ document.querySelector('.open-apps').onclick = function () {
 // When shortcuts or links are clicked open window and nav element
 const musicTab = document.querySelector('.music');
 const resumeTab = document.querySelector('.resume');
+const projectTab = document.querySelector('.projects');
 const mediaPlayerNavElement = document.querySelector('.media-player');
 const resumePlayerNavElement = document.querySelector('.resume-player');
+const projectNavElement = document.querySelector('.project-player');
 // When the link is clicked, remove the hidden class
 function removeHidden(element, element2) {
   element.style.display = 'inline-block';
