@@ -183,7 +183,7 @@ hr {
   position: absolute;
   bottom: 0;
   right: 0;
-  margin: 40px 20px;
+  margin: 40px 5px;
   display: none;
 }
 .window.resume {
