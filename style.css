@@ -139,6 +139,8 @@ hr {
 .window-options {
   height: 17.5px;
   padding-left: 6px;
+  display: flex;
+  gap: 10px;
 }
 .window-options a {
   font-size: 0.9rem;
