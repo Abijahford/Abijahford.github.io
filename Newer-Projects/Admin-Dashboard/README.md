@@ -9,8 +9,8 @@
 
 ### Screenshot
 
-![Mobile View]()
-![Desktop View]()
+![Tablet View](images/tablet.PNG)
+![Desktop View](images/desktop.PNG)
 
 ## My process
 
