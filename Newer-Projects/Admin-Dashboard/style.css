@@ -25,14 +25,50 @@ body {
   grid-template-rows: 175px auto auto;
 }
 .sidebar {
+  z-index: 3;
   grid-area: sidebar;
   background-color: var(--red);
 }
+.sidebar-grid {
+  display: grid;
+  grid-template-areas:
+    'dashboard'
+    'navigation'
+    'branding';
+  grid-template-rows: auto auto auto;
+  padding: 15px;
+  color: var(--tan);
+  gap: 60px;
+}
+.sidebar-grid > h2 {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.navigation,
+.branding {
+  display: flex;
+  flex-direction: column;
+  padding-left: 5px;
+  gap: 15px;
+}
+.link {
+  text-decoration: none;
+  color: var(--tan);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 1.3rem;
+}
 .header {
+  z-index: 2;
   grid-area: header;
   background-color: var(--tan);
+  box-shadow: 0 2px 8px var(--dark);
 }
 .main-content {
+  z-index: auto;
   grid-area: main-content;
   background-color: var(--green-blue);
 }
