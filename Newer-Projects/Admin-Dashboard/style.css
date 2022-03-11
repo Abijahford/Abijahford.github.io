@@ -39,6 +39,7 @@ body {
   padding: 15px;
   color: var(--tan);
   gap: 60px;
+  position: fixed;
 }
 .sidebar-grid > h2 {
   margin: 0;
@@ -135,6 +136,67 @@ button {
   z-index: auto;
   grid-area: main-content;
   background-color: var(--tan);
+  padding: 25px 15px;
+}
+.main-content-grid {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    'projects announcements'
+    'projects trending';
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 50% 50%;
+  gap: 10px;
+}
+.projects {
+  grid-area: projects;
+}
+.project-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
+}
+.project-card {
+  background-color: var(--green-blue);
+  height: 175px;
+  width: 300px;
+  border-radius: 10px;
+  border-left: #aed9e0 8px solid;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  box-shadow: 2px 3px 5px var(--dark);
+}
+.project-desc > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
+}
+.project-desc > p:nth-child(2) {
+  font-size: 0.9rem;
+  margin: 0;
+}
+.project-options {
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.project-options svg {
+  cursor: pointer;
+}
+h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.announcements {
+  grid-area: announcements;
+}
+.trending {
+  grid-area: trending;
 }
 grammarly-desktop-integration {
   display: none;
