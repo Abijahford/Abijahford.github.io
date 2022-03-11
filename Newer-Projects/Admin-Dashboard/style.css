@@ -145,8 +145,8 @@ button {
     'projects announcements'
     'projects trending';
   grid-template-columns: 60% 40%;
-  grid-template-rows: 50% 50%;
-  gap: 10px;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
 }
 .projects {
   grid-area: projects;
@@ -184,6 +184,8 @@ button {
   justify-content: end;
   gap: 20px;
 }
+.project-desc,
+.announce,
 .project-options svg {
   cursor: pointer;
 }
@@ -193,9 +195,33 @@ h3 {
   text-align: center;
 }
 .announcements {
+  padding-right: 15px;
   grid-area: announcements;
 }
+.ann-card {
+  background-color: var(--green-blue);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px var(--dark);
+  padding: 20px;
+}
+.announce {
+  padding: 10px 0;
+}
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: var(--dark);
+  border: none;
+}
+.announce h4,
+p {
+  margin: 0;
+}
 .trending {
+  padding-right: 15px;
   grid-area: trending;
 }
 grammarly-desktop-integration {
