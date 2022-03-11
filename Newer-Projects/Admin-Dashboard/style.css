@@ -91,7 +91,7 @@ body {
   flex-grow: 1;
   border: none;
   border-radius: 10px;
-  height: 24px;
+  height: 28px;
   background-color: var(--tan);
 }
 .header-profile {
@@ -150,11 +150,13 @@ button {
 }
 .projects {
   grid-area: projects;
+  display: grid;
+  align-self: center;
 }
 .project-grid {
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   justify-items: center;
 }
 .project-card {
@@ -197,18 +199,50 @@ h3 {
 .announcements {
   padding-right: 15px;
   grid-area: announcements;
+  display: grid;
+  align-self: center;
 }
 .ann-card {
   background-color: var(--green-blue);
   height: auto;
+  width: 300px;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 2px 3px 5px var(--dark);
   padding: 20px;
+  margin: 0 auto;
 }
 .announce {
   padding: 10px 0;
+}
+.trend-card {
+  background-color: var(--green-blue);
+  height: auto;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  box-shadow: 2px 3px 5px var(--dark);
+  padding: 20px;
+  gap: 10px;
+  margin: 0 auto;
+}
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.trend-handle {
+  display: flex;
+  flex-direction: column;
+}
+.trend-handle > p:nth-child(1) {
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+.trend-handle > p:nth-child(2) {
+  font-size: 0.9rem;
 }
 hr {
   width: 100%;
@@ -223,6 +257,8 @@ p {
 .trending {
   padding-right: 15px;
   grid-area: trending;
+  display: grid;
+  align-self: center;
 }
 grammarly-desktop-integration {
   display: none;
