@@ -1,209 +1,388 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:title" content="Abijah's Front End Portfolio" />
-    <meta property="og:description" content="Abijah's Front End Portfolio - Windows 7 Classic Theme" />
-    <meta name="image" property="og:image" content="http://abijahford.info/images/website-snippet.png">
-    <link rel="stylesheet" href="style.css">
-    <title> Abijah's Front End Portfolio - Windows 7 Classic Theme</title>
-</head>
-<!-- Windows 7 Classic Theme -->
-<body>
+    <meta
+      property="og:description"
+      content="Abijah's Front End Portfolio - Windows 7 Classic Theme"
+    />
+    <meta
+      name="image"
+      property="og:image"
+      content="http://abijahford.info/images/website-snippet.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Abijah's Front End Portfolio - Windows 7 Classic Theme</title>
+  </head>
+  <!-- Windows 7 Classic Theme -->
+  <body>
     <!-- Windows -->
     <div class="main">
-        <!-- Music -->
-        <div class="window music"> 
-            <div class="window-heading">
-                <div class="window-heading-title">
-                    <img src="images/Windows-Media-Center-icon.png" alt="Media Player">
-                    <p>Media Player - Spotify</p>
-                </div>
-                <button class="closeButton" onclick="addHidden(musicTab, mediaPlayerNavElement)">X </button>
-            </div>
-            <div class="window-body">
-                <iframe src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0" width="100%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
-            </div>
+      <!-- Music -->
+      <div class="window music">
+        <div class="window-heading">
+          <div class="window-heading-title">
+            <img
+              src="images/Windows-Media-Center-icon.png"
+              alt="Media Player"
+            />
+            <p>Media Player - Spotify</p>
+          </div>
+          <button
+            class="closeButton"
+            onclick="addHidden(musicTab, mediaPlayerNavElement)"
+          >
+            X
+          </button>
         </div>
-        <!-- Resume -->
-        <div class="window resume">
-            <div class="window-heading">
-                <div class="window-heading-title">
-                    <img src="images/Folder-Documents-icon.png" alt="Media Player">
-                    <p>Resume</p>
-                </div>
-                <button class="closeButton" onclick="addHidden(resumeTab, resumePlayerNavElement)">X </button>
-            </div>
-            <div class="window-options">
-                <a href="images/Abijah Ford's Tech Resume (3).pdf" download>Download</a>
-                <a href="https://github.com/Abijahford" target="_blank">GitHub</a>
-            </div>
-            <div class="window-body">
-                <img src="images/resume-photo.PNG" alt="Photo of Resume">
-            </div>
+        <div class="window-body">
+          <iframe
+            src="https://open.spotify.com/embed/playlist/0vvXsWCC9xrXsKd4FyS8kM?utm_source=generator&theme=0"
+            width="100%"
+            height="80"
+            frameborder="0"
+            allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          ></iframe>
         </div>
-        <!-- Projects -->
-        <div class="window projects"> 
-            <div class="window-heading">
-                <div class="window-heading-title">
-                    <img src="images/Windows-Media-Center-icon.png" alt="Folder Image Icon">
-                    <p>Project Center</p>
-                </div>
-                <button class="closeButton" onclick="addHidden(projectTab, projectNavElement)">X </button>
-            </div>
-            <div class="window-options">
-                <a href="https://github.com/Abijahford" target="_blank">GitHub</a>
-            </div>
-            <div class="window-body">
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>NFT Preview Component</p>
-                    </div>
-                    <a href="Newer-Projects/NFT-Preview-Component/index.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>QR Code Component</p>
-                    </div>
-                    <a href="Newer-Projects/QR-Code-Component/index.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Admin Dashboard(Tablet, Desktop)</p>
-                    </div>
-                    <a href="Newer-Projects/Admin-Dashboard/index.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Original Portfolio(Outdated)</p>
-                    </div>
-                    <a href="Original-Portfolio/index.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Responsive Page Layout(Grid)</p>
-                    </div>
-                    <a href="cssPractice(Outdated)/cssGridResponsive.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Single Price Grid Component</p>
-                    </div>
-                    <a href="cssPractice(Outdated)/singlePrice.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Responsive Nav Bar(Grid)</p>
-                    </div>
-                    <a href="cssPractice(Outdated)/navSectionGrid.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Responsive Main Section(Grid)</p>
-                    </div>
-                    <a href="cssPractice(Outdated)/mainSectionGrid.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Footer Section(Grid)</p>
-                    </div>
-                    <a href="cssPractice(Outdated)/footerGrid.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Apparel Landing Page</p>
-                    </div>
-                    <a href="cssPractice(Outdated)/apparelComing.html" target="_blank">View</a>
-                </div>
-                <div class="project">
-                    <div class="project-title">
-                        <img src="images/Folders-Windows-Folder-icon.png" alt="Folder Document Icon">
-                        <p>Auto Fill or Fit</p>
-                    </div>
-                    <a href="cssPractice(Outdated)/autoFillorFit.html" target="_blank">View</a>
-                </div>
-            </div>
+      </div>
+      <!-- Resume -->
+      <div class="window resume">
+        <div class="window-heading">
+          <div class="window-heading-title">
+            <img src="images/Folder-Documents-icon.png" alt="Media Player" />
+            <p>Resume</p>
+          </div>
+          <button
+            class="closeButton"
+            onclick="addHidden(resumeTab, resumePlayerNavElement)"
+          >
+            X
+          </button>
         </div>
-        <!-- Shortcuts -->
-        <div class="shortcut-container">
-            <div class="shortcut" ondblclick="removeHidden(projectTab, projectNavElement)">
-                <img src="images/Windows-Media-Center-icon.png" alt="Project Image">
-                <p>Project Center</p>
-            </div>
-            <div class="shortcut" ondblclick="removeHidden(musicTab, mediaPlayerNavElement)">
-                <img src="images/Windows-Media-Player-icon.png" alt="Media Player Image">
-                <p>Media Player</p>
-            </div>
-            <div class="shortcut" ondblclick="removeHidden(resumeTab, resumePlayerNavElement)">
-                <img src="images/Folder-Documents-icon.png" alt="Resume Image">
-                <p>Resume</p>
-            </div>
+        <div class="window-options">
+          <a href="images/Abijah Ford's Tech Resume (3).pdf" download
+            >Download</a
+          >
+          <a href="https://github.com/Abijahford" target="_blank">GitHub</a>
         </div>
+        <div class="window-body">
+          <img src="images/resume-photo.PNG" alt="Photo of Resume" />
+        </div>
+      </div>
+      <!-- Projects -->
+      <div class="window projects">
+        <div class="window-heading">
+          <div class="window-heading-title">
+            <img
+              src="images/Windows-Media-Center-icon.png"
+              alt="Folder Image Icon"
+            />
+            <p>Project Center</p>
+          </div>
+          <button
+            class="closeButton"
+            onclick="addHidden(projectTab, projectNavElement)"
+          >
+            X
+          </button>
+        </div>
+        <div class="window-options">
+          <a href="https://github.com/Abijahford" target="_blank">GitHub</a>
+        </div>
+        <div class="window-body">
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Advice Generator</p>
+            </div>
+            <a href="Newer-Projects/Advice-Generator/index.html" target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>NFT Preview Component</p>
+            </div>
+            <a
+              href="Newer-Projects/NFT-Preview-Component/index.html"
+              target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>QR Code Component</p>
+            </div>
+            <a
+              href="Newer-Projects/QR-Code-Component/index.html"
+              target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Admin Dashboard(Tablet, Desktop)</p>
+            </div>
+            <a href="Newer-Projects/Admin-Dashboard/index.html" target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Original Portfolio(Outdated)</p>
+            </div>
+            <a href="Original-Portfolio/index.html" target="_blank">View</a>
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Responsive Page Layout(Grid)</p>
+            </div>
+            <a
+              href="cssPractice(Outdated)/cssGridResponsive.html"
+              target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Single Price Grid Component</p>
+            </div>
+            <a href="cssPractice(Outdated)/singlePrice.html" target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Responsive Nav Bar(Grid)</p>
+            </div>
+            <a href="cssPractice(Outdated)/navSectionGrid.html" target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Responsive Main Section(Grid)</p>
+            </div>
+            <a href="cssPractice(Outdated)/mainSectionGrid.html" target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Footer Section(Grid)</p>
+            </div>
+            <a href="cssPractice(Outdated)/footerGrid.html" target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Apparel Landing Page</p>
+            </div>
+            <a href="cssPractice(Outdated)/apparelComing.html" target="_blank"
+              >View</a
+            >
+          </div>
+          <div class="project">
+            <div class="project-title">
+              <img
+                src="images/Folders-Windows-Folder-icon.png"
+                alt="Folder Document Icon"
+              />
+              <p>Auto Fill or Fit</p>
+            </div>
+            <a href="cssPractice(Outdated)/autoFillorFit.html" target="_blank"
+              >View</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Shortcuts -->
+      <div class="shortcut-container">
+        <div
+          class="shortcut"
+          ondblclick="removeHidden(projectTab, projectNavElement)"
+        >
+          <img src="images/Windows-Media-Center-icon.png" alt="Project Image" />
+          <p>Project Center</p>
+        </div>
+        <div
+          class="shortcut"
+          ondblclick="removeHidden(musicTab, mediaPlayerNavElement)"
+        >
+          <img
+            src="images/Windows-Media-Player-icon.png"
+            alt="Media Player Image"
+          />
+          <p>Media Player</p>
+        </div>
+        <div
+          class="shortcut"
+          ondblclick="removeHidden(resumeTab, resumePlayerNavElement)"
+        >
+          <img src="images/Folder-Documents-icon.png" alt="Resume Image" />
+          <p>Resume</p>
+        </div>
+      </div>
     </div>
     <div class="navigation-footer">
-        <div class="start-menu hidden">
-            <div class="left-column">
-                <div class="links">
-                    <div class="start-menu-links" onclick="removeHidden(resumeTab, resumePlayerNavElement)"><img src="images/Folder-Documents-icon.png" alt="Resume Icon"><a href="#">Resume</a></div>
-                    <div class="start-menu-links" onclick="removeHidden(projectTab, projectNavElement)"><img src="images/Windows-Media-Center-icon.png" alt="Media Center Icon"><a href="#">Project Center</a></div>
-                    <div class="start-menu-links" onclick="removeHidden(musicTab, mediaPlayerNavElement)"><img src="images/Windows-Media-Player-icon.png" alt="Media Player Icon"><a href="#">Media Player</a></div>
-                    <div class="start-menu-links"><img src="images/Whack-Windows-Live-Messenger-icon.png" alt="Live Messenger Icon"><a href="#"><span class="bold">*</span> = Unfunctional</a></div>
-                    <div class="start-menu-links" onclick="window.location.reload()"><img src="images/Windows-Live-Mesh-icon.png" alt="Refresh Icon"><a href="#">Refresh</a></div>
-                </div>
+      <div class="start-menu hidden">
+        <div class="left-column">
+          <div class="links">
+            <div
+              class="start-menu-links"
+              onclick="removeHidden(resumeTab, resumePlayerNavElement)"
+            >
+              <img src="images/Folder-Documents-icon.png" alt="Resume Icon" /><a
+                href="#"
+                >Resume</a
+              >
             </div>
-            <div class="right-column">
-                <img src="images/IMG_3709.jpg" alt="Abijah's User Image" width="60px" height="60px">
-                <div class="links">
-                    <!-- Opens tab with file that Includes: About Me and Contact Info -->
-                    <p style="font-weight: bold; margin: 0; user-select: none;">Abijah Ford</p>
-                    <!-- Opens tab with Resume document, option to download -->
-                    <a href="#" id="resume" onclick="removeHidden(resumeTab, resumePlayerNavElement)">Resume</a>
-                    <a href="#" id="resume" onclick="removeHidden(projectTab, projectNavElement)">Projects</a>
-                    <a href="#" id="music" onclick="removeHidden(musicTab, mediaPlayerNavElement)">Music</a>
-                    <hr>
-                    <a href="#"><span class="bold">*</span>Games</a>
-                    <a href="#"><span class="bold">*</span>Computer</a>
-                    <hr>
-                    <a href="#"><span class="bold">*</span>Control Panel</a>
-                    <a href="#"><span class="bold">*</span>Default Programs</a>
-                    <a href="#"><span class="bold">*</span>Help and Support</a>
-                </div>
+            <div
+              class="start-menu-links"
+              onclick="removeHidden(projectTab, projectNavElement)"
+            >
+              <img
+                src="images/Windows-Media-Center-icon.png"
+                alt="Media Center Icon"
+              /><a href="#">Project Center</a>
             </div>
+            <div
+              class="start-menu-links"
+              onclick="removeHidden(musicTab, mediaPlayerNavElement)"
+            >
+              <img
+                src="images/Windows-Media-Player-icon.png"
+                alt="Media Player Icon"
+              /><a href="#">Media Player</a>
+            </div>
+            <div class="start-menu-links">
+              <img
+                src="images/Whack-Windows-Live-Messenger-icon.png"
+                alt="Live Messenger Icon"
+              /><a href="#"><span class="bold">*</span> = Unfunctional</a>
+            </div>
+            <div class="start-menu-links" onclick="window.location.reload()">
+              <img
+                src="images/Windows-Live-Mesh-icon.png"
+                alt="Refresh Icon"
+              /><a href="#">Refresh</a>
+            </div>
+          </div>
         </div>
-        <a class="start-button">
-            <img src="images/file21c3.png" alt="Windows Icon">
-            <p> Start </p> 
-        </a>
-        <div class="open-apps">
-            <div class="opened-app media-player">
-                <img src="images/Windows-Media-Player-icon.png" alt="Windows Media Player Image">
-                <p>Media Player</p>
-            </div>
-            <div class="opened-app resume-player">
-                <img src="images/Folder-Documents-icon.png" alt="Resume Image">
-                <p>Resume</p>
-            </div>
-            <div class="opened-app project-player">
-                <img src="images/Windows-Media-Center-icon.png" alt="Project Image">
-                <p>Project Center</p>
-            </div>
+        <div class="right-column">
+          <img
+            src="images/IMG_3709.jpg"
+            alt="Abijah's User Image"
+            width="60px"
+            height="60px"
+          />
+          <div class="links">
+            <!-- Opens tab with file that Includes: About Me and Contact Info -->
+            <p style="font-weight: bold; margin: 0; user-select: none">
+              Abijah Ford
+            </p>
+            <!-- Opens tab with Resume document, option to download -->
+            <a
+              href="#"
+              id="resume"
+              onclick="removeHidden(resumeTab, resumePlayerNavElement)"
+              >Resume</a
+            >
+            <a
+              href="#"
+              id="resume"
+              onclick="removeHidden(projectTab, projectNavElement)"
+              >Projects</a
+            >
+            <a
+              href="#"
+              id="music"
+              onclick="removeHidden(musicTab, mediaPlayerNavElement)"
+              >Music</a
+            >
+            <hr />
+            <a href="#"><span class="bold">*</span>Games</a>
+            <a href="#"><span class="bold">*</span>Computer</a>
+            <hr />
+            <a href="#"><span class="bold">*</span>Control Panel</a>
+            <a href="#"><span class="bold">*</span>Default Programs</a>
+            <a href="#"><span class="bold">*</span>Help and Support</a>
+          </div>
         </div>
-        <div class="date-time">
-            <input type="text" id="currentDateTime">
+      </div>
+      <a class="start-button">
+        <img src="images/file21c3.png" alt="Windows Icon" />
+        <p>Start</p>
+      </a>
+      <div class="open-apps">
+        <div class="opened-app media-player">
+          <img
+            src="images/Windows-Media-Player-icon.png"
+            alt="Windows Media Player Image"
+          />
+          <p>Media Player</p>
         </div>
+        <div class="opened-app resume-player">
+          <img src="images/Folder-Documents-icon.png" alt="Resume Image" />
+          <p>Resume</p>
+        </div>
+        <div class="opened-app project-player">
+          <img src="images/Windows-Media-Center-icon.png" alt="Project Image" />
+          <p>Project Center</p>
+        </div>
+      </div>
+      <div class="date-time">
+        <input type="text" id="currentDateTime" />
+      </div>
     </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
