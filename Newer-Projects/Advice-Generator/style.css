@@ -54,3 +54,13 @@ body {
 #dice:hover {
   box-shadow: 0 0 10px var(--neon-green);
 }
+
+@media screen and (max-width: 544px) {
+  .container {
+    width: 300px;
+    justify-content: center;
+  }
+  .hr {
+    display: none;
+  }
+}
